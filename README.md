@@ -1,7 +1,7 @@
 Advent of Code 2017
 ===================
 
-Coding challenges, yeah!
+Coding challenges on [https://adventofcode.com/](https://adventofcode.com/).
 
 
 ```
