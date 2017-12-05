@@ -1,6 +1,6 @@
 "use strict";
 
-/* --- Day 1: Inverse Captcha (B) ---
+/* --- Day 2: Corruption Checksum ---
 
     For example, given the following spreadsheet:
 
