@@ -23,22 +23,23 @@
 */
 
 const input = require('fs').readFileSync('input.txt', 'utf8');
+const solutions = require('fs').readFileSync('b141481.txt', 'utf8').split("\n");
 
 
-/*
+var toCheck = Number(input);
 
-n1 =           n0
-n2 = n1      + n0  // corner
-n3 = n3 + n1 + n0
-n4 = n4      + n0  // corner
-n5 = n4 + n3 + n0
-n6 = n5      + n0  // corner
-n7 = n6 + n5 + n0
-n8 = n7 + n1 + n0  // corner
+for (var i=0; i < solutions.length; i++) {
+    var line = solutions[i].split(" ");
 
-...
+    if (line[0][0] === "#") {
+        continue;
+    }
 
-n9 = n8 + n1
+    var seq = Number(line[0]);
+    var total = Number(line[1]);
 
-
-*/
+    if (total > toCheck) {
+        console.log(total);
+        break;
+    }
+}
